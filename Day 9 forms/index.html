@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENERAL BUS PASS APPLICATION</title>
+</head>
+<body align="center">
+<center>
+<img src="https://lh5.googleusercontent.com/proxy/vNcIGFv_7Gh1ztU-CTynlYEWXhlgg9o70UxRJwoBmUka5uQjcAMyM_lnAJwfDDIBZ7KPVkEyq7XcKcrW1f_zD7tn4QF3PP0olJb5" width="100" alt="">
+<h3 >TELANGANA STATE ROAD TRANSPORT CORPORATION</h3>
+<h4>GENERAL BUS PASS APPLICATION</h4>
+<form action="./submitsucessfully.html">
+<fieldset style="max-width: 800px;">
+    <legend><b><button type="button" style="background-color: blue;color:white;">Application Details</button></b></legend>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="applicant_name" value="" required>
+    <label for="father_guardian">Father's/Guardian's Name</label>
+    <input type="text" id="father_guardian" name="father_guardian" value="" required><br><br>
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+    <label>Gender</label>
+    <input type="radio" id="male" name="gender" value="male" required><label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label><br><br>
+    <label>Age As on</label>
+    <input type="text" id="age_years" name="age_years" size="2" required>Years
+    <input type="text" id="age_months" name="age_months" size="2" required>Months
+    <input type="text" id="age_days" name="age_days" size="2" required>Days
+    <label for="aadhaar">Aadhar No</label>
+    <input type="tel" id="aadhaar" name="aadhaar" value="" maxlength="12" pattern="\d{12}" required><br><br>
+    <label for="whatsapp">Whatsapp No</label>
+    <input type="tel" id="whatsapp" name="whatsapp_no" value="" maxlength="10" pattern="\d{10}" required><br><br>
+    <label for="photo">Photo</label>
+    <input type="file" id="photo" name="photo" accept=".pdf,.doc,.png" required><br>
+</fieldset>
+<fieldset style="max-width: 800px;">
+    <legend><button type="button" style="background-color: blue;color:white;">Residential Address Details</button></legend>
+    <label for="address">Applicant's Address</label>
+    <textarea name="address" id="address" required></textarea>
+    <label for="district">District</label>
+    <select name="district" id="district" required>
+      <option value="" disabled selected>--select--</option>
+      <option value="hyderabad">Hyderabad</option>
+      <option value="khammam">Khammam</option>
+      <option value="kodad">Kodad</option>
+    </select><br><br>
+    <label for="mandal">Mandal</label>
+    <select name="mandal" id="mandal" required>
+      <option value="" disabled selected>--select--</option>
+      <option value="nelakondapalli">nelakondapalli</option>
+      <option value="kusumanchi">Kusumanchi</option>
+      <option value="anathagiri">Anathagiri</option>
+    </select>
+    <label for="village">Village</label>
+    <select name="village" id="village" required>
+      <option value="" disabled selected>--select--</option>
+      <option value="mandrajupalli">Mandrajupalli</option>
+      <option value="chennaram">Chennaram</option>
+      <option value="bodulabanda">Bodulabanda</option>
+    </select><br><br>
+    <label for="pincode">Pincode</label>
+    <input type="tel" id="pincode" name="pincode" required maxlength="6" pattern="\d{6}"> 
+</fieldset>
+<fieldset style="max-width: 800px;">
+    <legend><button type="button" style="background-color: blue;color:white;">Pass Type Details</button></legend>
+    <label for="city">City</label>
+    <select name="city" id="city" required>
+      <option value="" disabled selected>--select--</option>
+      <option value="hyderabad">Hyderabad</option>
+      <option value="khammam">Khammam</option>
+      <option value="kodad">Kodad</option>
+    </select><br><br>
+    <label for="pass_type">Pass Type:</label>
+    <select id="pass_type" name="pass_type" required>
+      <option value="" disabled selected>--select--</option>
+      <option value="ordinary">Ordinary pass</option>
+      <option value="greater">Greter pass</option>
+      <option value="others">Others</option>
+    </select>
+</fieldset>
+<fieldset style="max-width: 800px;">
+    <legend><button type="button" style="background-color: blue;color:white;">Mode of Payment & Pass Collection</button></legend>
+    <label for="payment_mode">Payment Mode</label>
+    <select name="payment_mode" id="payment_mode" required>
+      <option value="" disabled selected>select payment mode</option>
+      <option value="counter">Payment at counter</option>
+    </select><br><br>
+    <label for="pass_delivery_mode">Pass Delivery Mode</label>
+    <select name="pass_delivery_mode" id="pass_delivery_mode" required>
+      <option value="" disabled selected>select Pass Delivery Mode</option>
+      <option value="at_counter">At counter</option>
+    </select><br><br>
+    <label for="collection_center">Center at which you want to collect pass</label>
+    <select name="collection_center" id="collection_center" required>
+      <option value="" disabled selected>--select--</option>
+      <option value="kphb">RTC KPHB HYD [28-07-2025]</option>
+      <option value="kukatpalli">RTC KUKATPALLI [28-07-2025]</option>
+      <option value="lb_nagar">RTC LB NAGAR [28-07-2025]</option>
+    </select><br>
+</fieldset><br>
+<img src="https://tse2.mm.bing.net/th/id/OIP.foQhyM9YUqWxD_ZDYTSUVQHaDJ?pid=Api&P=0&h=180" width="100px"><br>
+<label for="captcha">Enter Captcha:</label>
+   <input type="text" id="captcha" name="captcha" maxlength="6" placeholder="enter captcha" required><br><br>
+   <input type="submit" value="submit" style="background-color: red;color:white;">
+</form>
+</center>
+</body>
+</html>
